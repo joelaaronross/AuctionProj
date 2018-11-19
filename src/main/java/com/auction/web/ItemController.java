@@ -15,16 +15,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.auction.business.item.Item;
 import com.auction.business.item.ItemRepository;
+import com.auction.util.AuctionMaintenanceReturn;
 
 @CrossOrigin
 @Controller 
-@RequestMapping(path="/Jsds") 
+@RequestMapping(path="/Item") 
 public class ItemController extends BaseController {
 	@Autowired 
-	private ItemRepository jsdRepository;
+	private ItemRepository itemRepository;
 
 	@GetMapping(path="/List") 
-	public @ResponseBody Iterable<Item> getAllJsds() {
+	public @ResponseBody Iterable<Item> getAllItems() {
 		return ItemRepository.findAll();
 	}
 	

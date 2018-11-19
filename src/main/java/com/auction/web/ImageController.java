@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.auction.business.image.Image;
 import com.auction.business.image.ImageRepository;
+import com.auction.util.AuctionMaintenanceReturn;
 
 @CrossOrigin
 @Controller    
