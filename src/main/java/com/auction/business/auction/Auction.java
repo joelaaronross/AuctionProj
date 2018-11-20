@@ -1,11 +1,15 @@
 package com.auction.business.auction;
 
-import java.security.Timestamp;
+import java.sql.Timestamp;
+
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+
 
 @Entity
 public class Auction {
@@ -15,6 +19,7 @@ public class Auction {
 	private String title;
 	private Timestamp startDateTime;
 	private Timestamp endDateTime;
+
 	
 	
 	public Auction(int id, String title, Timestamp startDateTime, Timestamp endDateTime) {
